@@ -12,11 +12,16 @@ ${path}=  ./login_tests/a.sh
 
 *** Test Cases ***
 Bash Test
-    Run Process  ${path}  shell=true  stdout=true  alias=myproc
+    Run Process  ${path}  shell=true  alias=myproc  #stdout=true # <- tworzy plik z outputem z "a.sh"
     ${a}  ${b}=  Get Process Result  myproc  stdout=yes  stderr=yes
     Log  ${a}
 
     ${result}=  Parse Output  ${a}
+    IF  ${result} == False
+    Log  OK
     Log  ${result}
+    ELSE
+    Log  ERROR
+    END
 
 #    Log  ${b}
