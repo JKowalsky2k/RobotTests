@@ -17,7 +17,7 @@ Bash Test
     Log  ${a}
 
     ${result}=  Parse Output  ${a}
-    IF  ${result} == False
+    IF  ${result} == True
     Log  OK
     Log  ${result}
     ELSE
