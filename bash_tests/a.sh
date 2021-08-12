@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo HTTP/1.1 200 OK
 echo Cache-Control: no-cache, no-store, must-revalidate, private
 echo Connection: close
