@@ -31,3 +31,7 @@ echo         \"readOnlyAccess\" : false,
 echo         \"rndMode\" : false,
 echo        \"userName\" : \"Nemuadmin\"
 echo     }
+
+
+#output = $( ... )
+#echo $output
