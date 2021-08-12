@@ -8,7 +8,7 @@ Library           Process
 Library           ./output_parser.py
 
 *** Variables ***
-${path}=  ./login_tests/a.sh
+${path}=  ./bash_tests/a.sh
 
 *** Test Cases ***
 Bash Test
